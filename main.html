@@ -190,3 +190,27 @@
       margin-bottom: 1.5rem;
     }
     .stat-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.85rem;
+    }
+    .stat-card .label { font-size: 0.75rem; color: var(--muted); margin-bottom: 0.25rem; }
+    .stat-card .value { font-family: var(--font-mono); font-size: 0.95rem; color: var(--accent); }
+    .msg { font-size: 0.85rem; padding: 0.75rem; border-radius: var(--radius); margin-top: 0.5rem; }
+    .msg.info { background: rgba(232, 118, 46, 0.12); border: 1px solid var(--accent-dim); color: var(--text); }
+    .msg.err { background: rgba(196, 92, 92, 0.15); border: 1px solid var(--danger); color: #e8a0a0; }
+    .msg.ok { background: rgba(90, 158, 110, 0.15); border: 1px solid var(--success); color: #a8d4b8; }
+    footer {
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
