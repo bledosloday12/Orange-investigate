@@ -22,3 +22,27 @@
       --danger: #c45c5c;
       --radius: 10px;
       --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+      --font-mono: "IBM Plex Mono", monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.5;
+      background-image:
+        radial-gradient(ellipse 90% 60% at 50% -10%, rgba(232, 118, 46, 0.08), transparent 50%),
+        radial-gradient(ellipse 70% 40% at 90% 60%, rgba(232, 118, 46, 0.04), transparent 45%);
+    }
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      min-height: 100vh;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
