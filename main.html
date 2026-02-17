@@ -142,3 +142,27 @@
       color: var(--text);
     }
     .results-section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .results-section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: var(--accent);
+    }
+    .result-item {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .result-item:last-child { border-bottom: none; }
+    .result-id { color: var(--muted); word-break: break-all; }
